@@ -1,0 +1,4 @@
+steps:
+  - name: "route_task"
+    tool: "deepagent/router"
+    inputs: {"query": "{{task_description}}", "sensitivity_level": "{{sensitivity}}"}

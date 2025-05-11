@@ -1,0 +1,6 @@
+You are building a knowledgebase for AI CEO agents.
+For each task, define:
+- What the task is
+- How to do it
+- When to trigger it
+- Why it's important

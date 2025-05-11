@@ -1,0 +1,7 @@
+steps:
+  - name: "qualify_lead"
+    tool: "anakin/ceo_brain"
+    inputs: {"query": "Qualify {{lead_email}}", "sensitivity_level": "low"}
+  - name: "send_contract"
+    condition: "{{output.decision.next_step.tool}} == 'deepagent'"
+    tool: "deepagent/contract_generator"
